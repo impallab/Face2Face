@@ -1,0 +1,96 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  background-image: url("https://images.pexels.com/photos/6266990/pexels-photo-6266990.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: cover;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.form-container {
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 30px 30px 8px red;
+  text-align: center;
+}
+
+.title {
+  color: red;
+  margin-bottom: 30px;
+}
+
+.input-field {
+  width: 400px;
+  background-color: lightgray;
+  color: red;
+  letter-spacing: 0.3rem;
+  font-size: large;
+  font-weight: 700;
+  padding: 17px;
+  margin-bottom: 20px;
+  border: 1px solid white;
+  border-radius: 10px;
+  outline: none;
+}
+
+.submit-button {
+  background-color: green;
+  color: white;
+  font-size: larger;
+  font-weight: 700;
+  border: none;
+  padding: 15px 30px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+
+
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+/* Colorful animation */
+@keyframes rainbow {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.input-field:focus,
+.submit-button:hover {
+  animation: rainbow 2s infinite alternate;
+}
+
+#warning {
+  background-color: aliceblue;
+  color: red;
+  padding: 1rem;
+}
+
+#meet-page {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
